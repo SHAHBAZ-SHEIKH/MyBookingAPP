@@ -35,6 +35,10 @@ const connectDB = async()=>{
     
 }
 
+
+app.use("/",()=>{
+    res.send("Hello")
+})
 // MiddlesWare
 
 app.use(cookieParser())
