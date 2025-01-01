@@ -1,0 +1,56 @@
+.feature {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
+  }
+  
+  .featureImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .featureItem {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex: 1;
+    max-width: 33%; /* Ensures 3 items per row */
+    min-width: 300px; /* Ensures responsiveness */
+  }
+  
+  .featureTitles {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+  }
+  
+  .featureTitles h1 {
+    font-size: 24px;
+  }
+  
+  .featureTitles h2 {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .featureItem {
+      max-width: 48%; /* 2 items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .featureItem {
+      max-width: 100%; /* 1 item per row on small screens */
+    }
+  }
+  
